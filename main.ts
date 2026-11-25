@@ -1,7 +1,9 @@
 // Write one sentence about the best meal ever had to /output/entry.txt.
 //
 // Node 22, no dependencies, deterministic, no network. The sentence is a
-// fixed string: the program writes exactly these bytes on every run.
+// fixed string: the program writes exactly these bytes on every run, with no
+// trailing newline — the house gate counts characters, so a trailing newline
+// would spend one of the 200 on nothing.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
